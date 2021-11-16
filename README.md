@@ -29,6 +29,7 @@
 - git clone https://github.com/elmar8287/school_library_oop.git
 - cd ./school_library_oop
 - `gem install rubocop`
+- run `bundle install` to install Ruby Gems (Rubocop include)
 
 ## Author
 
