@@ -1,6 +1,8 @@
 # School library (OOP using)
 
-> In this project we will use OOP to build the a simple librarian app, where should be posibility to add books, users and records about who borrowed a given book and when.
+> In this project we will use OOP to build the a simple librarian app, where should be posibility to add books, users and records about who borrowed a given book and when.<br>
+![Project Screenshot_1](./img/1.PNG)<br>
+![Project Screenshot_2](./img/2.PNG)
 ## App functionality:
 
 - Add new students or teachers.
