@@ -12,8 +12,8 @@
 ## Milestones:
 
 - Add Person, Student, and Teacher classes. 
-- Decorate a class. <<<<< we are here
-- Set up associations.
+- Decorate a class. 
+- Set up associations. <<<<< we are here
 - Add basic UI.
 - Refactor your code.
 - Preserve data.
