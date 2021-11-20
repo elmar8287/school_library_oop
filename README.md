@@ -1,6 +1,6 @@
 # School library (OOP using)
 
-> In this project we will use OOP to build the a simple librarian app, where should be posibility to add books, users and records about who borrowed a given book and when.<br>
+> In this project, we will use OOP to build a simple librarian app. There is a possibility to add books, users, and records about who borrowed a given book and when.<br>
 ![Project Screenshot_1](./img/1.PNG)<br>
 ![Project Screenshot_2](./img/2.PNG)
 ## App functionality:
@@ -12,9 +12,9 @@
 ## Milestones:
 
 - Add Person, Student, and Teacher classes. 
-- Decorate a class. <<<<< we are here
-- Set up associations.
-- Add basic UI.
+- Decorate a class. 
+- Set up associations. 
+- Add basic UI. <<<<< we are here
 - Refactor your code.
 - Preserve data.
 - Unit tests.
@@ -30,6 +30,7 @@
 - cd ./school_library_oop
 - `gem install rubocop`
 - run `bundle install` to install Ruby Gems (Rubocop include)
+- `gem install pry` to install PRY
 
 ## Author
 
