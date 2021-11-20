@@ -13,8 +13,8 @@
 
 - Add Person, Student, and Teacher classes. 
 - Decorate a class. 
-- Set up associations. <<<<< we are here
-- Add basic UI.
+- Set up associations. 
+- Add basic UI. <<<<< we are here
 - Refactor your code.
 - Preserve data.
 - Unit tests.
