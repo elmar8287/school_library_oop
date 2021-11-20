@@ -30,6 +30,7 @@
 - cd ./school_library_oop
 - `gem install rubocop`
 - run `bundle install` to install Ruby Gems (Rubocop include)
+- `gem install pry` to install PRY
 
 ## Author
 
