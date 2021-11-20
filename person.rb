@@ -22,4 +22,8 @@ class Person
   def validate_name
     @name = @corrector.correct_name(@name)
   end
+  
+  def add_rentals(date, book)
+    Rental.new(date, book, self)
+  end
 end
