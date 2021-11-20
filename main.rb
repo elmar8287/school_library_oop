@@ -100,4 +100,37 @@ class App
     sleep 0.6
     menu
   end
+
+  def create_a_teacher
+    print 'Age: '
+    age = gets.chomp.to_i
+
+    print 'Name: '
+    name = gets.chomp
+
+    print 'Specialization: '
+    specialization = gets.chomp
+
+    teacher = Teacher.new(specialization, age, name)
+    @people << teacher
+
+    puts 'Teacher added successfully'
+    sleep 0.6
+    menu
+  end
+
+  def create_a_book
+    print 'Title: '
+    title = gets.chomp
+
+    print 'Author: '
+    author = gets.chomp
+
+    book = Book.new(title, author)
+    @books << book
+
+    puts 'Book added successfully'
+    sleep 0.6
+    menu
+  end
 end
