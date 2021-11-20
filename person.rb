@@ -3,7 +3,6 @@ require_relative 'rental'
 
 class Person
   attr_accessor :name, :age, :rentals
-  attr_reader :id
 
   def initialize(age, name = 'Unknown', parent_permission: true)
     @id = [1..100]
