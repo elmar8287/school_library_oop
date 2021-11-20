@@ -133,4 +133,28 @@ class App
     sleep 0.6
     menu
   end
+
+  def create_a_rental
+    puts 'Please, choose a book from the list'
+    @books.each_with_index { |book, index| puts "#{index}) Title: #{book.title}, Author: #{book.author}" }
+  
+    book_id = gets.chomp.to_i
+  
+    puts 'Please, choose a person from the list (not id)'
+    @people.each_with_index do |person, index|
+      puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+    end
+  
+    person_id = gets.chomp.to_i
+  
+    print 'Date: '
+    date = gets.chomp.to_s
+  
+    rental = Rental.new(date, @people[person_id], @books[book_id])
+    @rentals << rental
+  
+    puts 'Rental created successfully'
+    sleep 0.6
+    menu
+  end
 end
