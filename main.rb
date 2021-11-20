@@ -53,4 +53,51 @@ class App
       puts 'Please enter a number between 1 and 7'
     end
   end
+
+  def list_all_books
+    puts 'The book list is empty! Please, add a book.' if @books.empty?
+
+    @books.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
+    sleep 0.6
+    menu
+  end
+
+  def list_all_people
+    puts 'The list is empty! Please, add a student or teacher.' if @people.empty?
+    @people.map { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
+    sleep 0.6
+    menu
+  end
+
+  def create_a_person
+    print 'To create a student press (1), for teacher (2) [Input a number]: '
+    option = gets.chomp
+
+    case option
+    when '1'
+      create_a_student
+    when '2'
+      create_a_teacher
+    else
+      puts 'Please, choose 1 or 2'
+    end
+  end
+
+  def create_a_student
+    print 'Age: '
+    age = gets.chomp.to_i
+
+    print 'Name: '
+    name = gets.chomp
+
+    print 'Has parent permission? [Y/N]: '
+    parent_permission = gets.chomp.downcase
+
+    student = Student.new(@class, age, name, parent_permission)
+    @people << student
+
+    puts 'Student created successfully'
+    sleep 0.6
+    menu
+  end
 end
